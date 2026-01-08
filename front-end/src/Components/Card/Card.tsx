@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 
 interface Props {
     title: string;
@@ -8,7 +8,7 @@ interface Props {
     imdbId: string;
 };
 
-const Card = (props: Props) => {
+const Card: React.FC<Props> = (props: Props): JSX.Element => {
   return (
     <div className='card'>
         <img src={props.imageUrl} alt='Movie Poster' />

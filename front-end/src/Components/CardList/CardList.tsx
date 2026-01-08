@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import Card from '../Card/Card'
 
 interface Props {}
 
-const CardList = (props: Props) => {
+const CardList: React.FC<Props> = (props: Props) : JSX.Element => {
   return (
     <div>
         <Card title="Barry Lyndon" description="An Irish rogue wins the heart of a rich widow and assumes her dead husband's aristocratic position in 18th-century England." releaseDate={1975} imageUrl="https://m.media-amazon.com/images/M/MV5BNmM2MGQ5Y2UtYzA3ZC00ZDJlLTkwNDYtMjBmZGExZDJiN2RlXkEyXkFqcGc@._V1_.jpg" imdbId="tt0072684" />
